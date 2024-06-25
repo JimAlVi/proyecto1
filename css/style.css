@@ -1,0 +1,401 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*main*/
+main{
+    background-color: rgba(194, 199, 199, 0.485);
+}
+
+/*Configuracion del header*/
+header{
+    height: 110px;
+    background: #51cae5;
+    padding: 0 50px;
+    color: rgb(38, 64, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+   font-weight:700;
+   color: rgb(255, 255, 255);
+   font-size: 35px;
+}
+
+.menu a{   
+    font-size: 20px;
+    color: rgb(118, 33, 3);
+    text-decoration: none;
+    transition: 0.45s;
+    padding: 0 10px;
+}
+
+.mostrar-menu, .cerrar-menu{
+    font-size: 20px;
+    cursor:pointer;
+    display: none;
+    transition: 0.45s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover, .mostrar-menu:hover, .cerrar-menu:hover{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+  }
+
+#check{
+    display: none;
+}
+
+/*--------------------------*/
+
+/*BANNER INICIO*/
+#banner{   
+    background-image: url(../imagenes/banner.jpg);  
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-size: 30px;
+}
+
+/*BANNER NOSOTROS*/
+#banner-nosotros{   
+    background-image: url(../imagenes/osos-perezoso.jpg);  
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-size: 30px;
+}
+
+/*Texto del index*/
+.text-index h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 5px 0;
+}
+
+.text-index p{
+    font-size: 18px;
+    text-align:justify;    
+    margin: 20px;
+}
+
+/*MAPA*/
+.mapa{
+    width: 95%;    
+    margin: auto;
+}
+
+/*Seccion de preguntas*/
+.titulo-faq{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.fieldset{
+    border: 2px solid #51cae5;
+    padding: 15px 0;
+    margin: 25px 10px 0 5px;         
+}
+
+.preguntas{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.preguntas summary{    
+    cursor: pointer;
+}
+
+.preguntas p{
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.preguntas[open] p{
+    margin-left: 30px;
+}
+
+/*------------------------------------------*/
+/*Lista de animales protegidos*/
+.lista-animales{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+    margin: 20px 200px;
+    font-size: 20px;
+}
+
+.lista-animales-div{
+    display: flex;
+    gap: 50px; 
+    align-items: flex-start;
+}
+
+/*ICONOS*/
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: inline-block;    
+    text-align: center;
+}
+.contenido-iconos div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenido-iconos i {
+    font-size: 100px;  
+    display: block;
+    margin-bottom: 10px;
+    color: #51cae5;   
+}
+
+.li{
+ padding: 5px 0;
+}
+
+/*------------------------------------------*/
+/*GALERIA*/
+.galeria img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;   
+}
+
+.galeria{       
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;   
+}
+/*------------------------------------------*/
+/*CONTACTO*/
+#contacto h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 35px 0;
+    color: rgb(143, 15, 15);
+}
+#contacto{
+    color: rgb(143, 15, 15);
+    text-align:left;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+#contacto form{   
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    height: 150px;
+    resize: none;
+}
+form input, form textarea{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #191e1f; 
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 20px;
+    color:#3c8c9e;
+    background-color: rgb(227, 239, 240);
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: rgb(26, 210, 189);
+    box-shadow: 0 0 0 1px rgb(26, 210, 189);
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    pad: 10px;
+}
+
+.btn-enviar {
+    text-align: center;
+    margin: 20px 0; 
+}
+
+.btn-enviar input[type="submit"] {
+    background-color: #51cae5; 
+    color: white;
+    font-weight: 700;
+    padding: 20px 20px; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    transition: background-color 0.45s ease; 
+}
+
+
+.btn-enviar input[type="submit"]:hover {
+    background-color: #0b69d5; 
+}
+
+.btn-enviar input[type="submit"]:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.btn-enviar input[type="submit"]:active {
+    background-color: #033773; 
+    transform: translateY(5px); 
+}
+
+/*------------------------------------------*/
+/*FOOTER*/
+footer{
+    background: #51cae5;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+}
+/*------------------------------------------*/
+
+/*RESPONSIVE*/
+
+@media(max-width: 768px){
+    /*HEADER*/
+    .mostrar-menu, .cerrar-menu{
+        display: block;
+        font-size: 30px;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #51cae5;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        pad: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;      
+    }
+
+    .menu a{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .cerrar-menu{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .datos-form,
+    .mensaje,
+    .btn-enviar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label{
+        text-align: center;
+    }
+
+    
+    .lista-animales-div {
+        display: inline;
+        flex-wrap:wrap;
+        justify-content:right;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .lista-animales {
+        display: flex;
+        text-align: left;
+        flex: 1;
+        max-width: 300px;
+        font-size: 20px;
+        list-style:circle;
+    }
+
+    .lista-animales li {
+        padding: 5px 0;
+        flex: 0 0 auto;
+    }
+
+
+    .contenido-iconos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 20px 0;
+    }
+
+    .contenido-iconos div {
+        text-align: center;
+        flex: 1;
+        max-width: 150px;
+    }
+
+    .contenido-iconos i {
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #51cae5;
+    }
+
+}
